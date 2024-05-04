@@ -10,7 +10,7 @@ Before using `kubectl`, you need to install the Kubernetes command-line tool. In
 
 ## Common Commands
 
-- **Get cluster information:**
+**Get cluster information:**
 ```  kubectl cluster-info```
 
 **List all pods in the current namespace**
@@ -18,6 +18,7 @@ Before using `kubectl`, you need to install the Kubernetes command-line tool. In
 
 **List all pods in a specific namespace**
 ```kubectl get pods -n <namespace>```
+
 **Describe a pod**
 ```kubectl describe pod <pod_name>```
 
@@ -26,8 +27,8 @@ Before using `kubectl`, you need to install the Kubernetes command-line tool. In
 
 **Deploy an application from a YAML file**
 ```kubectl apply -f <path_to_yaml_file>```
-**Scale a deployment**
 
+**Scale a deployment**
 ```kubectl scale --replicas=<replica_count> deployment/<deployment_name>```
 
 **Delete a pod**
